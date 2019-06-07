@@ -1,0 +1,10 @@
+Para crear una Web App con Angular y Asp.net.
+
+Podemos hacerlo con Visual Studio o Visual Studio Code.
+
+Si elejimos Visual Studio Code entonces atraves del cmd escribimos esta sentencia:
+
+mkdir 'url' ---> para crear una carpeta.
+dotnet new webapi -o DatingApp.API -n DatingAPP ---> Con esta sentencia creamos un proyecto de WEB APP.
+-o : (output)Location to place the generated output.		
+-n : (name)The name for the output being created. If no name is speci

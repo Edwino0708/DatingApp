@@ -1,0 +1,43 @@
+
+Para crear una base de dato con Entity Framework primero debemos de crear una clase que simule se nuestro modelo de datos. 
+
+namespace DatingApp.API.Models
+{
+    public class Value
+    {
+        public int Id{get; set;}
+        public string Name{get;set;}
+    }
+}
+
+Luego de crear diho modelo de dato procedemos de crear una clase que implemente de la clase Context por ejemplo: este formato 
+
+using DatingApp.API.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace DatingApp.API.Data
+{
+    public class DataContext : DbContext
+    {
+        public DataContext(DbContextOptions<DataContext> options)
+        :base(options){}
+
+        public DbSet<Value> Values{get; set;}
+
+    }
+}
+
+Luego en el la clase Startup en el metodo de servicio agregamos nuestro context de 
+
+ public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddDbContext<DataContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddMvc()
+                .AddNewtonsoftJson();
+        }
+
+Ejecutamos esta sentencia 
+dotnet ef migrations add "Nombre para la migrasion" listo para crear la base de dato seria : 
+dotnet ef database update.
+
+
