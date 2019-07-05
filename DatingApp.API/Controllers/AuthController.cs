@@ -50,6 +50,7 @@ namespace DatingApp.API.Controllers
         [HttpPost("auth")]
         public async Task<IActionResult> Login(LoginUserDTO userDTO)
         {
+            
             //Buscamos el usuario en la base de Dato
             var searchUser = await _repo.Login(userDTO.Usernanme.ToLower(),userDTO.Password);
 

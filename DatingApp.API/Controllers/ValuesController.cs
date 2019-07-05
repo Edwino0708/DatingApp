@@ -19,11 +19,11 @@ namespace DatingAPP.Controllers
 
         public ValuesController(DataContext context)
         {
-            this._context = context;
+            _context = context;
         }
 
         // GET api/values
-        
+
         [HttpGet]
         public async Task<IActionResult> Get()
         {
