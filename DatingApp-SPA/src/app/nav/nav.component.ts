@@ -20,6 +20,7 @@ export class NavComponent implements OnInit {
       },
       erro => {
         console.log('Logged error');
+        console.log(this.model);
       }
     );
   }
