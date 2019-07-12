@@ -12,18 +12,18 @@ export class AuthService {
 
   login(model: any) {
     const headers = new HttpHeaders().set('Content-Type', 'application/json');
-
-    return this.http
-      .post(this.baseUrl + 'login', model, {
-        headers
+    return this.http.post(this.baseUrl + 'login', model, { headers }).pipe(
+      map((response: any) => {
+        const user = response;
+        if (user) {
+          localStorage.setItem('token', user.token);
+        }
       })
-      .pipe(
-        map((response: any) => {
-          const user = response;
-          if (user) {
-            localStorage.setItem('token', user.token);
-          }
-        })
-      );
+    );
+  }
+
+  register(model: any) {
+    var headers = new HttpHeaders().set('Content-Type', 'application/json');
+    return this.http.post(this.baseUrl + 'Register', model, { headers });
   }
 }
