@@ -8,21 +8,23 @@ import { error } from '@angular/compiler/src/util';
   styleUrls: ['./value.component.css']
 })
 export class ValueComponent implements OnInit {
+  values: any;
 
-  values : any;
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   ngOnInit() {
     this.getValues();
+    console.log(this.values);
   }
 
-  getValues(){
-    this.http.get('http://localhost:5000/api/values').subscribe(response =>{
-      this.values = response;
-    },error =>{
-      console.log(error);
-    });
+  getValues() {
+    this.http.get('https://localhost:44303/api/values').subscribe(
+      response => {
+        this.values = response;
+      },
+      error => {
+        console.log(error);
+      }
+    );
   }
-
 }

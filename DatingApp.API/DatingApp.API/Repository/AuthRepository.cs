@@ -1,3 +1,6 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using DatingApp.API.Data;
 using DatingApp.API.Models;
@@ -7,7 +10,6 @@ namespace DatingApp.API.Repository
 {
     public class AuthRepository : IAuthRepository
     {
-
         private readonly DataContext _context;
 
         public AuthRepository(DataContext context)

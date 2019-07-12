@@ -1,13 +1,14 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using DatingApp.API.DTOS;
 using DatingApp.API.Models;
 using DatingApp.API.Repository;
-using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -16,9 +17,9 @@ namespace DatingApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [EnableCors("CorsPolicy")]
     public class AuthController : ControllerBase
     {
+
         private IAuthRepository _repo;
         private IConfiguration _config;
 
@@ -30,7 +31,7 @@ namespace DatingApp.API.Controllers
 
 
         [HttpPost("Register")]
-        public async Task<IActionResult> Register([FromBody] RegisterUserDTO userDTO)
+        public async Task<IActionResult> Register(RegisterUserDTO userDTO)
         {
             userDTO.Username = userDTO.Username.ToLower();
 
@@ -49,7 +50,7 @@ namespace DatingApp.API.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] LoginUserDTO userDTO)
+        public async Task<IActionResult> Login(LoginUserDTO userDTO)
         {
 
             //Buscamos el usuario en la base de Dato
@@ -91,6 +92,6 @@ namespace DatingApp.API.Controllers
                 token = tokenHandler.WriteToken(token)
             });
         }
-
     }
+
 }
