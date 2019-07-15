@@ -7,8 +7,7 @@ import { AuthService } from '../_services/auth.service';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-  @Input() valuesFromHome: any;
-  @Output() cancelRegiste = new EventEmitter();
+  @Output() cancelRegister = new EventEmitter();
   model: any = {};
 
   constructor(private authService: AuthService) {}
@@ -27,7 +26,7 @@ export class RegisterComponent implements OnInit {
   }
 
   canceled() {
-    this.cancelRegiste.emit(false);
+    this.cancelRegister.emit(false);
     console.log('Cancelled Module');
   }
 }
