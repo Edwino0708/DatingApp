@@ -12,7 +12,7 @@ namespace DatingApp.API.DTOS
         public string Username { get; set; }
 
         [Required]
-        [StringLength(8, MinimumLength = 4, ErrorMessage = "Contraseña Incorrecta")]
+        [StringLength(8, MinimumLength = 4, ErrorMessage = "Incorrect password")]
         public string Password { get; set; }
     }
 }
