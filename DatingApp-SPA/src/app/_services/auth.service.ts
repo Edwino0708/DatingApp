@@ -2,12 +2,13 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { JwtHelperService } from '@auth0/angular-jwt';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  private baseUrl = 'https://localhost:44303/api/auth/';
+  private baseUrl = environment.baseUrl;
   decodedToken: any;
   jwtHelper = new JwtHelperService();
 
@@ -15,7 +16,7 @@ export class AuthService {
 
   login(model: any) {
     const headers = new HttpHeaders().set('Content-Type', 'application/json');
-    return this.http.post(this.baseUrl + 'login', model, { headers }).pipe(
+    return this.http.post(this.baseUrl + 'auth/login', model, { headers }).pipe(
       map((response: any) => {
         const user = response;
         if (user) {
@@ -29,7 +30,7 @@ export class AuthService {
 
   register(model: any) {
     var headers = new HttpHeaders().set('Content-Type', 'application/json');
-    return this.http.post(this.baseUrl + 'Register', model, { headers });
+    return this.http.post(this.baseUrl + 'auth/Register', model, { headers });
   }
 
   loggedIn() {

@@ -4,8 +4,10 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 using DatingApp.API.Data;
 using DatingApp.API.Repository;
+using DatingApp.API.Helpers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
@@ -38,7 +40,7 @@ namespace DatingApp.API
             services.AddCors();
 
             //services.AddTransient<Seed>();
-
+            services.AddAutoMapper(typeof(Startup));
             services.AddDbContext<DataContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<IDatingRepository, DatingRepository>();
@@ -58,7 +60,7 @@ namespace DatingApp.API
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, Seed seed)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env) //Seed seed)
         {
             if (env.IsDevelopment())
             {
@@ -83,6 +85,7 @@ namespace DatingApp.API
                     });
                 });
             }
+
 
             //seed.SeedUsers();
             app.UseAuthentication();

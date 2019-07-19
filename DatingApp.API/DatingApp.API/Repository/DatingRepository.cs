@@ -12,7 +12,8 @@ namespace DatingApp.API.Repository
     {
         private DataContext _context;
 
-        public DatingRepository(DataContext context) {
+        public DatingRepository(DataContext context)
+        {
             _context = context;
         }
 
