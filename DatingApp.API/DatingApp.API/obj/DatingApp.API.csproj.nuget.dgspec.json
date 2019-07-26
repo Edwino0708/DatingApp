@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\AngularAsp\\DatingApp.Api\\DatingApp.Api\\DatingApp.API.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\AngularAsp\\DatingApp.APi\\DatingApp.APi\\DatingApp.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\AngularAsp\\DatingApp.Api\\DatingApp.Api\\DatingApp.API.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\AngularAsp\\DatingApp.APi\\DatingApp.APi\\DatingApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\AngularAsp\\DatingApp.Api\\DatingApp.Api\\DatingApp.API.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\AngularAsp\\DatingApp.APi\\DatingApp.APi\\DatingApp.API.csproj",
         "projectName": "DatingApp.API",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\AngularAsp\\DatingApp.Api\\DatingApp.Api\\DatingApp.API.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\AngularAsp\\DatingApp.APi\\DatingApp.APi\\DatingApp.API.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\AngularAsp\\DatingApp.Api\\DatingApp.Api\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\AngularAsp\\DatingApp.APi\\DatingApp.APi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,9 +41,17 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "Affecto.Authentication.Claims": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[6.1.1, )"
+            },
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.8.0, )"
             },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
@@ -67,6 +75,10 @@
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools.DotNet": {
+              "target": "Package",
+              "version": "[2.0.2, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",

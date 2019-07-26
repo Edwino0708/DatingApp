@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "Affecto.Authentication.Claims/2.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Affecto.Authentication.Claims.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Affecto.Authentication.Claims.dll": {}
+        }
+      },
       "AutoMapper/8.1.1": {
         "type": "package",
         "dependencies": {
@@ -26,6 +35,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
+      "CloudinaryDotNet/1.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/CloudinaryDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/CloudinaryDotNet.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -1865,6 +1886,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/_._": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Tools.DotNet/2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.App": "2.0.6",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "compile": {
+          "lib/netcoreapp2.0/dotnet-ef.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/dotnet-ef.dll": {}
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/2.2.0": {
@@ -4909,6 +4943,18 @@
     }
   },
   "libraries": {
+    "Affecto.Authentication.Claims/2.2.0": {
+      "sha512": "1lZghNFjTqMWXIi2Mh6ccbqSXzHFPXZICTlwZIFFeq5PsQOSfUNse44GROJKsPFVm0+Ebvx7I/0b9/gJqyuR+A==",
+      "type": "package",
+      "path": "affecto.authentication.claims/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "affecto.authentication.claims.2.2.0.nupkg.sha512",
+        "affecto.authentication.claims.nuspec",
+        "lib/net45/Affecto.Authentication.Claims.dll"
+      ]
+    },
     "AutoMapper/8.1.1": {
       "sha512": "GKBliBukkLG0z/U0T4Jy+yEpr5bKDImQ9nEy/T8jqNulwNkWDjiEWa9TL4yCxIhleDbmVmw2xYSaJ3Eb2OcSUg==",
       "type": "package",
@@ -4937,6 +4983,23 @@
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.pdb"
+      ]
+    },
+    "CloudinaryDotNet/1.8.0": {
+      "sha512": "jrxUPvVmdGL+8wDGQn4rBrRh7jKPDTqUW1kBj+fwmGdiMW5aBArQ3P2ErnYA84AQgvJnb2JwP3WTlwD2Yc/kdA==",
+      "type": "package",
+      "path": "cloudinarydotnet/1.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cloudinarydotnet.1.8.0.nupkg.sha512",
+        "cloudinarydotnet.nuspec",
+        "lib/net40/CloudinaryDotNet.dll",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/netcore/CloudinaryDotNet.deps.json",
+        "lib/netcore/CloudinaryDotNet.dll",
+        "lib/netstandard1.3/CloudinaryDotNet.deps.json",
+        "lib/netstandard1.3/CloudinaryDotNet.dll"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -6569,6 +6632,25 @@
         "tools/net461/win-x86/ef.exe",
         "tools/netcoreapp2.0/any/ef.dll",
         "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Tools.DotNet/2.0.2": {
+      "sha512": "jSGsxk5rPPpaiideKf95O4j+u1kJ/ieP+M9zPDyGJhFmTRXcCFhyVzzwVAUGOq1c7JgKOBHZYhCnfZJXdpuQUA==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.tools.dotnet/2.0.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp2.0/dotnet-ef.dll",
+        "lib/netcoreapp2.0/dotnet-ef.runtimeconfig.json",
+        "microsoft.entityframeworkcore.tools.dotnet.2.0.2.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.dotnet.nuspec",
+        "prefercliruntime",
+        "tools/net461/ef.exe",
+        "tools/net461/ef.x86.exe",
+        "tools/netcoreapp2.0/ef.dll",
+        "tools/netcoreapp2.0/ef.runtimeconfig.json"
       ]
     },
     "Microsoft.Extensions.Caching.Abstractions/2.2.0": {
@@ -13328,12 +13410,15 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "Affecto.Authentication.Claims >= 2.2.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 6.1.1",
+      "CloudinaryDotNet >= 1.8.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 2.2.6",
       "Microsoft.EntityFrameworkCore.Design >= 2.2.6",
       "Microsoft.EntityFrameworkCore.Sqlite >= 2.2.6",
+      "Microsoft.EntityFrameworkCore.Tools.DotNet >= 2.0.2",
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.3"
     ]
@@ -13345,11 +13430,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\AngularAsp\\DatingApp.API\\DatingApp.API\\DatingApp.API.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\AngularAsp\\DatingApp.APi\\DatingApp.APi\\DatingApp.API.csproj",
       "projectName": "DatingApp.API",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\AngularAsp\\DatingApp.API\\DatingApp.API\\DatingApp.API.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\AngularAsp\\DatingApp.APi\\DatingApp.APi\\DatingApp.API.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\AngularAsp\\DatingApp.API\\DatingApp.API\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\AngularAsp\\DatingApp.APi\\DatingApp.APi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13379,9 +13464,17 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
+          "Affecto.Authentication.Claims": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[6.1.1, )"
+          },
+          "CloudinaryDotNet": {
+            "target": "Package",
+            "version": "[1.8.0, )"
           },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
@@ -13406,6 +13499,10 @@
             "target": "Package",
             "version": "[2.2.6, )"
           },
+          "Microsoft.EntityFrameworkCore.Tools.DotNet": {
+            "target": "Package",
+            "version": "[2.0.2, )"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
@@ -13429,5 +13526,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Affecto.Authentication.Claims 2.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
+      "libraryId": "Affecto.Authentication.Claims",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.2"
+      ]
+    }
+  ]
 }

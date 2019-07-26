@@ -31,7 +31,7 @@ namespace DatingApp.API.Controllers
 
 
         [HttpPost("Register")]
-        public async Task<IActionResult> Register(RegisterUserDTO userDTO)
+        public async Task<IActionResult> Register(RegisterUserDto userDTO)
         {
             userDTO.Username = userDTO.Username.ToLower();
 
@@ -50,7 +50,7 @@ namespace DatingApp.API.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login(LoginUserDTO userDTO)
+        public async Task<IActionResult> Login(LoginUserDto userDTO)
         {
 
             //Buscamos el usuario en la base de Dato
