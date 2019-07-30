@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 
 namespace DatingApp.API.Controllers
 {
+    //[Authorize]
     [Route("api/users/{userId}/photos")]
     [ApiController]
     public class PhotosController : ControllerBase
@@ -48,7 +49,7 @@ namespace DatingApp.API.Controllers
         }
 
 
-        [HttpPost]
+        [HttpPost()]
         public async Task<IActionResult> AddPhotoForUser(int userId, [FromForm] PhotoForCreationDto photoForCreationDto)
         {
             if (userId != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value))
@@ -91,8 +92,8 @@ namespace DatingApp.API.Controllers
             }
 
             return BadRequest("Could not add the photo");
-   
+
         }
-    
+
     }
 }
