@@ -36,12 +36,14 @@ namespace DatingApp.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
                 .AddJsonOptions(opt =>
                 {
                     opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
                 });
-            services.AddCors();
+       
+
 
             //services.AddTransient<Seed>();
             services.AddAutoMapper(typeof(Startup));
@@ -61,6 +63,7 @@ namespace DatingApp.API
                          ValidateAudience = false,
                      };
                  });
+
 
         }
 
@@ -95,8 +98,9 @@ namespace DatingApp.API
             // seed.SeedUsers();
             app.UseAuthentication();
             app.UseHttpsRedirection();
-            app.UseCors(x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+            app.UseCors(x => x.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod().AllowCredentials());
             app.UseMvc();
+
         }
     }
 }
