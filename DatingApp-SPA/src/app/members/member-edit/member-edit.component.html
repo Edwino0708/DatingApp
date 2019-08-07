@@ -17,7 +17,7 @@
       <div class="card">
         <img
           class="card-img-top img-thumbnail"
-          src="{{ user.photoUrl }}"
+          src="{{ photoUrl }}"
           alt="{{ user.knowAs }}"
         />
         <div class="card-body">
@@ -70,7 +70,7 @@
               ></textarea>
               <h4>Interests</h4>
               <textarea
-                name="lookingFor"
+                name="interests"
                 rows="6"
                 class="form-control"
                 [(ngModel)]="user.interests"
@@ -95,7 +95,10 @@
             </form>
           </tab>
           <tab heading="Edit Photos">
-            <app-photo-edit [photos]="user.photos"></app-photo-edit>
+            <app-photo-edit
+              [photos]="user.photos"
+              (getMemberPhotoChange)="updateMainPhoto($event)"
+            ></app-photo-edit>
           </tab>
         </tabset>
       </div>
