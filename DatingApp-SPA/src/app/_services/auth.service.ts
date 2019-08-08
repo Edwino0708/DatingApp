@@ -39,9 +39,9 @@ export class AuthService {
     );
   }
 
-  register(model: any) {
+  register(user: User) {
     var headers = new HttpHeaders().set('Content-Type', 'application/json');
-    return this.http.post(this.baseUrl + 'auth/Register', model, { headers });
+    return this.http.post(this.baseUrl + 'auth/Register', user, { headers });
   }
 
   loggedIn() {
