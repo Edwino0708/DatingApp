@@ -1,6 +1,0 @@
-Why we should use the repository pattern 
-
-.Minimizes duplicate query Logic 
-Decouples applicaction from persistence framework
-All DB queries in the same place
-Promotes testability

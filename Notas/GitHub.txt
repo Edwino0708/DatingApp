@@ -1,5 +1,0 @@
-git init
-git add .
-git commit -m "Message"
-git remote add origin mas url de gitHub
-git push -u origin master
