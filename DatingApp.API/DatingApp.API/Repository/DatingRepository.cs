@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DatingApp.API.Repository
 {
-    public class DatingRepository : IDatingR epository
+    public class DatingRepository : IDatingRepository
     {
         private DataContext _context;
 

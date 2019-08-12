@@ -10,7 +10,6 @@ namespace DatingApp.API
 {
     public static class Extensions
     {
-        MyProperty = 566;
         public static void AddAplicactionError(this HttpResponse response, string messange)
         {
             response.Headers.Add("Applicaction-Error", messange);
