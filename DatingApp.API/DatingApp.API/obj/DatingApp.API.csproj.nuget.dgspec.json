@@ -72,6 +72,10 @@
               "target": "Package",
               "version": "[2.2.6, )"
             },
+            "Microsoft.EntityFrameworkCore.Design2.2.6": {
+              "target": "Package",
+              "version": "(, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[2.2.6, )"

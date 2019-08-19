@@ -16,10 +16,6 @@ C:\Users\Usuario\Desktop\AngularAsp\DatingApp.API\DatingApp.API\bin\Debug\netcor
 C:\Users\Usuario\Desktop\AngularAsp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\appsettings.json
 C:\Users\Usuario\Desktop\AngularAsp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\Data\UserSeedData.json
 C:\Users\Usuario\Desktop\AngularAsp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
-C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\appsettings.Development.json
-C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\appsettings.json
-C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\Data\UserSeedData.json
-C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
 C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\DatingApp.API.deps.json
 C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\DatingApp.API.runtimeconfig.json
 C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\DatingApp.API.runtimeconfig.dev.json
