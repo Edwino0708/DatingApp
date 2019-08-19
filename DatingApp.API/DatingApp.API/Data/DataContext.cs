@@ -25,15 +25,15 @@ namespace DatingApp.API.Data
 
             builder.Entity<Like>()
                 .HasOne(u => u.Likee)
-                .WithMany(u => u.Likees)
+                .WithMany(u => u.Likers)
                 .HasForeignKey(u => u.LikeeId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.Entity<Like>()
-              .HasOne(u => u.Liker)
-              .WithMany(u => u.Likees)
-              .HasForeignKey(u => u.LikerId)
-              .OnDelete(DeleteBehavior.Restrict);
+                .HasOne(u => u.Liker)
+                .WithMany(u => u.Likees)
+                .HasForeignKey(u => u.LikerId)
+                .OnDelete(DeleteBehavior.Restrict);
 
 
         }
