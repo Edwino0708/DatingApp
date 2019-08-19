@@ -16,3 +16,21 @@ C:\Users\Usuario\Desktop\AngularAsp\DatingApp.API\DatingApp.API\bin\Debug\netcor
 C:\Users\Usuario\Desktop\AngularAsp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\appsettings.json
 C:\Users\Usuario\Desktop\AngularAsp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\Data\UserSeedData.json
 C:\Users\Usuario\Desktop\AngularAsp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\Data\UserSeedData.json
+C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\DatingApp.API.deps.json
+C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\DatingApp.API.runtimeconfig.json
+C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\DatingApp.API.runtimeconfig.dev.json
+C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\DatingApp.API.dll
+C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp2.2\DatingApp.API.pdb
+C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.RazorAssemblyInfo.cache
+C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.RazorAssemblyInfo.cs
+C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.RazorTargetAssemblyInfo.cache
+C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.dll
+C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.pdb
