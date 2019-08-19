@@ -29,3 +29,4 @@ C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\Datin
 C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.RazorTargetAssemblyInfo.cache
 C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.dll
 C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.pdb
+C:\Users\Usuario\Desktop\Proyects\Angular Proyects\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.csprojAssemblyReference.cache
