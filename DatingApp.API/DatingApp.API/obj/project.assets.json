@@ -13430,11 +13430,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Proyects\\Angular Proyects\\DatingApp\\DatingApp.API\\DatingApp.API\\DatingApp.API.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Proyects\\Angular Proyects\\DatingApp\\DatingApp.Api\\DatingApp.Api\\DatingApp.API.csproj",
       "projectName": "DatingApp.API",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyects\\Angular Proyects\\DatingApp\\DatingApp.API\\DatingApp.API\\DatingApp.API.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyects\\Angular Proyects\\DatingApp\\DatingApp.Api\\DatingApp.Api\\DatingApp.API.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\Proyects\\Angular Proyects\\DatingApp\\DatingApp.API\\DatingApp.API\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\Proyects\\Angular Proyects\\DatingApp\\DatingApp.Api\\DatingApp.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13515,7 +13515,12 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true
@@ -13527,7 +13532,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Affecto.Authentication.Claims 2.2.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
+      "message": "Package 'Affecto.Authentication.Claims 2.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
       "libraryId": "Affecto.Authentication.Claims",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.2"
