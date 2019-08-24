@@ -48,6 +48,37 @@ namespace DatingApp.API
             //services.AddTransient<Seed>();
             services.AddAutoMapper(typeof(Startup));
             services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
+            services.AddDbContext<DataContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddScoped<IAuthRepository, AuthRepository>();
+            services.AddScoped<IDatingRepository, DatingRepository>();
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                 .AddJwtBearer(options =>
+                 {
+                     options.TokenValidationParameters = new TokenValidationParameters
+                     {
+                         ValidateIssuerSigningKey = true,
+                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII
+                             .GetBytes(Configuration.GetSection("AppSettings:Token").Value)),
+                         ValidateIssuer = false,
+                         ValidateAudience = false,
+                     };
+                 });
+            services.AddScoped<LogUserActivity>();
+        }
+        public void ConfigureDevelopmentServices(IServiceCollection services)
+        {
+            services.AddCors();
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+                .AddJsonOptions(opt =>
+                {
+                    opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                });
+
+
+
+            //services.AddTransient<Seed>();
+            services.AddAutoMapper(typeof(Startup));
+            services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
             services.AddDbContext<DataContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<IDatingRepository, DatingRepository>();
@@ -65,6 +96,7 @@ namespace DatingApp.API
                  });
             services.AddScoped<LogUserActivity>();
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)//, Seed seed)
@@ -98,9 +130,21 @@ namespace DatingApp.API
 
             // seed.SeedUsers();
             app.UseAuthentication();
+            app.UseStaticFiles();
+            app.UseDefaultFiles();
             app.UseHttpsRedirection();
             app.UseCors(x => x.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod().AllowCredentials());
-            app.UseMvc();
+            app.UseMvc(routes =>
+            {
+                routes.MapSpaFallbackRoute(
+                    name: "spa-fallback",
+                    defaults: new
+                    {
+                        controller = "Fallback",
+                        action = "Index"
+                    }
+                );
+            });
 
         }
     }
