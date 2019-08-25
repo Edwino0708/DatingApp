@@ -4,16 +4,6 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Remove="Migrations\20190717202048_ExtendsModels.cs" />
-    <Compile Remove="Migrations\20190717202048_ExtendsModels.Designer.cs" />
-    <Compile Remove="Migrations\20190717202602_ExtendsModels.cs" />
-    <Compile Remove="Migrations\20190717202602_ExtendsModels.Designer.cs" />
-    <Compile Remove="Migrations\20190725185003_PublicId.cs" />
-    <Compile Remove="Migrations\20190725185003_PublicId.Designer.cs" />
-    <Compile Remove="Migrations\20190726140400_PubicID.cs" />
-    <Compile Remove="Migrations\20190726140400_PubicID.Designer.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Affecto.Authentication.Claims" Version="2.2.0" />
     <PackageReference Include="CloudinaryDotNet" Version="1.8.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
